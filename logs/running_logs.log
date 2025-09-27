@@ -28,3 +28,13 @@
 [2025-09-27 17:58:45,295: INFO: common]: yaml file: params.yaml loaded successfully
 [2025-09-27 17:58:45,297: INFO: common]: Directory created at: artifacts
 [2025-09-27 17:58:45,298: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-27 18:02:10,953: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 18:02:10,955: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 18:02:10,956: INFO: common]: Directory created at: artifacts
+[2025-09-27 18:02:10,958: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-27 18:05:16,751: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 18:05:16,753: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 18:05:16,754: INFO: common]: Directory created at: artifacts
+[2025-09-27 18:05:16,754: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-27 18:05:20,454: INFO: 717126125]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-27 18:05:20,455: INFO: 717126125]: Zip file already extracted in dir :[artifacts/data_ingestion]
