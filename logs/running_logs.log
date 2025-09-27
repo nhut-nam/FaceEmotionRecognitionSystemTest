@@ -1,0 +1,30 @@
+[2025-09-27 17:42:01,127: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:42:01,128: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:42:53,883: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:42:53,894: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:49:04,580: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:49:04,582: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:51:25,287: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:51:25,289: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:51:35,495: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:51:35,497: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:51:35,499: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:52:17,625: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:52:17,628: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:52:17,630: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:53:53,298: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:53:53,301: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:53:53,302: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:55:31,643: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:55:31,645: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:55:31,646: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:57:22,258: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:57:22,260: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:57:22,261: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:58:13,194: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:58:13,196: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:58:13,197: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:58:45,292: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 17:58:45,295: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 17:58:45,297: INFO: common]: Directory created at: artifacts
+[2025-09-27 17:58:45,298: INFO: common]: Directory created at: artifacts/data_ingestion
