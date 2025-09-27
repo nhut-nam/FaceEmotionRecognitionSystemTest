@@ -1,4 +1,4 @@
-from FacialExpressionRecognition.config.configuration import ConfigurationManager
+from FacialExpressionRecognition.config.configuration import ConfigurationManager 
 from FacialExpressionRecognition.components.data_ingestion import DataIngestion
 from FacialExpressionRecognition import logger
 
