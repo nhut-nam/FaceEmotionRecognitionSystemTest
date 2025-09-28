@@ -46,7 +46,7 @@ class Training:
 
         self.extract_dataset()
         
-        train_data = torchvision.datasets.ImageFolder(root=self.config.dataset_path, transform=train_transforms)
+        train_data = torchvision.datasets.ImageFolder(root=self.config.dataset_path / "FER2013" / "train", transform=train_transforms)
         train_loader = torch.utils.data.DataLoader(train_data, batch_size=self.config.params_batch_size, shuffle=True)
 
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
