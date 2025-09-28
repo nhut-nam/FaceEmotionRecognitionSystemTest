@@ -386,3 +386,472 @@ x==========x
 [2025-09-27 21:49:57,507: INFO: main]: >>>>>> stage Prepare Base Model stage completed <<<<<<
 
 x==========x
+[2025-09-28 09:43:34,819: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:43:34,831: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:43:34,833: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:43:34,834: ERROR: 4016484038]: "'ConfigBox' object has no attribute 'trained_model'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'trained_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'trained_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'trained_model'. Did you mean: 'trained_model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'trained_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'trained_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'trained_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'trained_model'. Did you mean: 'trained_model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\2991876576.py", line 14, in get_training_config
+    trained_model_path = os.path.join(training_config.trained_model)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'trained_model'". Did you mean: 'trained_model_path'?
+[2025-09-28 09:44:02,940: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:44:02,942: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:44:02,943: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:44:02,943: ERROR: 4016484038]: "'ConfigBox' object has no attribute 'trained_model'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'trained_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'trained_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'trained_model'. Did you mean: 'trained_model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'trained_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'trained_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'trained_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'trained_model'. Did you mean: 'trained_model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\2991876576.py", line 14, in get_training_config
+    trained_model_path = os.path.join(training_config.trained_model)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'trained_model'". Did you mean: 'trained_model_path'?
+[2025-09-28 09:44:12,855: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:44:12,857: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:44:12,858: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:44:12,858: ERROR: 4016484038]: "'ConfigBox' object has no attribute 'updated_base_model'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'updated_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'updated_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\362330020.py", line 15, in get_training_config
+    updated_base_model_path = os.path.join(training_config.updated_base_model)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model'"
+[2025-09-28 09:44:38,688: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:44:38,691: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:44:38,692: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:44:38,692: ERROR: 4016484038]: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\1590291379.py", line 15, in get_training_config
+    updated_base_model_path = os.path.join(training_config.updated_base_model_path)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+[2025-09-28 09:45:59,786: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:45:59,788: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:45:59,789: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:45:59,789: ERROR: 4016484038]: 'ConfigurationManager' object has no attribute 'training_config'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\1020190894.py", line 17, in get_training_config
+    dataset_path = os.path.join(self.training_config.dataset_path)
+AttributeError: 'ConfigurationManager' object has no attribute 'training_config'. Did you mean: 'get_training_config'?
+[2025-09-28 09:47:28,733: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:47:28,735: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:47:28,736: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:47:28,736: ERROR: 4016484038]: 'ConfigurationManager' object has no attribute 'training_config'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\1020190894.py", line 17, in get_training_config
+    dataset_path = os.path.join(self.training_config.dataset_path)
+AttributeError: 'ConfigurationManager' object has no attribute 'training_config'. Did you mean: 'get_training_config'?
+[2025-09-28 09:48:43,387: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:48:43,388: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:48:43,389: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:48:43,390: ERROR: 4016484038]: Argument path_to_directories of type <class 'pathlib.WindowsPath'> to <function create_directories at 0x0000013EDAED9CF0> does not match annotation type <class 'list'>
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\1109426850.py", line 19, in get_training_config
+    create_directories(Path(training_config.root_dir))
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\site-packages\ensure\main.py", line 833, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_directories of type <class 'pathlib.WindowsPath'> to <function create_directories at 0x0000013EDAED9CF0> does not match annotation type <class 'list'>
+[2025-09-28 09:49:35,237: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:49:35,239: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:49:35,240: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:49:35,241: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 09:49:35,241: ERROR: 4016484038]: "'ConfigBox' object has no attribute 'num_classes'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'NUM_CLASSES'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'NUM_CLASSES'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'NUM_CLASSES'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'NUM_CLASSES'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'num_classes'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'num_classes'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'num_classes'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\905312459.py", line 26, in get_training_config
+    params_num_classes = params.NUM_CLASSES
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'num_classes'"
+[2025-09-28 09:50:42,444: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:50:42,455: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:50:42,456: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:50:42,457: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 09:50:42,458: ERROR: 4016484038]: TrainingConfig.__init__() got an unexpected keyword argument 'dataset_path'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\4016484038.py", line 3, in <module>
+    training_config = config.get_training_config()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_9468\905312459.py", line 29, in get_training_config
+    training_config = TrainingConfig(
+TypeError: TrainingConfig.__init__() got an unexpected keyword argument 'dataset_path'
+[2025-09-28 09:53:11,226: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:53:11,229: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:53:11,231: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:53:11,232: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 09:53:11,313: ERROR: 4016484038]: [Errno 2] No such file or directory: 'artifacts\\data'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\1488135359.py", line 18, in train
+    self.extract_dataset()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\1488135359.py", line 9, in extract_dataset
+    with ZipFile(self.config.dataset_path, 'r') as zip_ref:
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data'
+[2025-09-28 09:55:27,815: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:55:27,817: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:55:27,818: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:55:27,819: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 09:55:27,896: ERROR: 4016484038]: [Errno 13] Permission denied: 'artifacts\\data'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\143940723.py", line 19, in train
+    self.extract_dataset()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\143940723.py", line 10, in extract_dataset
+    with ZipFile(self.config.dataset_path, 'r') as zip_ref:
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'artifacts\\data'
+[2025-09-28 09:57:55,738: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:57:55,741: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:57:55,741: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:57:55,743: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 09:57:55,810: ERROR: 4016484038]: [Errno 13] Permission denied: 'artifacts\\data'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\3037046892.py", line 19, in train
+    self.extract_dataset()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_19772\3037046892.py", line 10, in extract_dataset
+    with ZipFile(self.config.dataset_path, 'r') as zip_ref:
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'artifacts\\data'
+[2025-09-28 09:58:58,626: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 09:58:58,629: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 09:58:58,633: INFO: common]: Directory created at: artifacts
+[2025-09-28 09:58:58,635: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 09:58:58,721: ERROR: 4016484038]: [Errno 13] Permission denied: 'artifacts\\data'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\3037046892.py", line 19, in train
+    self.extract_dataset()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\3037046892.py", line 10, in extract_dataset
+    with ZipFile(self.config.dataset_path, 'r') as zip_ref:
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'artifacts\\data'
+[2025-09-28 10:00:28,887: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:00:28,889: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:00:28,890: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:00:28,891: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:00:28,958: ERROR: 4016484038]: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\data'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\983365999.py", line 19, in train
+    self.extract_dataset()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\983365999.py", line 9, in extract_dataset
+    with ZipFile(self.config.training_data_path, 'r') as zip_ref:
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\data'
+[2025-09-28 10:02:10,318: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:02:10,320: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:02:10,321: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:02:10,322: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:02:10,397: ERROR: 4016484038]: [Errno 13] Permission denied: 'artifacts\\data_ingestion'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\983365999.py", line 19, in train
+    self.extract_dataset()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\983365999.py", line 9, in extract_dataset
+    with ZipFile(self.config.training_data_path, 'r') as zip_ref:
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'artifacts\\data_ingestion'
+[2025-09-28 10:02:33,712: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:02:33,713: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:02:33,714: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:02:33,715: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:02:46,426: ERROR: 4016484038]: 'collections.OrderedDict' object has no attribute 'to'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\983365999.py", line 25, in train
+    self.model = self.model.to(device)
+AttributeError: 'collections.OrderedDict' object has no attribute 'to'
+[2025-09-28 10:03:53,345: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:03:53,347: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:03:53,348: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:03:53,349: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:04:03,614: ERROR: 4016484038]: 'NoneType' object has no attribute 'to'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\3999930852.py", line 25, in train
+    self.model = self.get_model().to(device)
+AttributeError: 'NoneType' object has no attribute 'to'
+[2025-09-28 10:05:10,772: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:05:10,774: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:05:10,775: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:05:10,776: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:05:20,512: ERROR: 4016484038]: 'collections.OrderedDict' object has no attribute 'to'
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 6, in <module>
+    training.train()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\431402426.py", line 27, in train
+    self.model = self.model.to(device)
+AttributeError: 'collections.OrderedDict' object has no attribute 'to'
+[2025-09-28 10:07:04,891: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:07:04,893: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:07:04,894: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:07:04,895: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:07:05,311: ERROR: 4016484038]: Error(s) in loading state_dict for ResNet:
+	size mismatch for fc.weight: copying a param with shape torch.Size([7, 512]) from checkpoint, the shape in current model is torch.Size([1000, 512]).
+	size mismatch for fc.bias: copying a param with shape torch.Size([7]) from checkpoint, the shape in current model is torch.Size([1000]).
+Traceback (most recent call last):
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\4016484038.py", line 5, in <module>
+    training.get_model()
+  File "C:\Users\namnh\AppData\Local\Temp\ipykernel_16100\366108171.py", line 7, in get_model
+    self.model = self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
+  File "c:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\nn\modules\module.py", line 2624, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for ResNet:
+	size mismatch for fc.weight: copying a param with shape torch.Size([7, 512]) from checkpoint, the shape in current model is torch.Size([1000, 512]).
+	size mismatch for fc.bias: copying a param with shape torch.Size([7]) from checkpoint, the shape in current model is torch.Size([1000]).

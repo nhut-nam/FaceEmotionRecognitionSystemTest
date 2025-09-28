@@ -1,0 +1,13 @@
+artifacts/data/
+artifacts/training/
+artifacts/prepare_base_model/
+
+venv/
+.env/
+
+*.h5
+*.pth
+*.pt
+
+logs/
+*.log

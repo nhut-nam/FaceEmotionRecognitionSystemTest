@@ -18,3 +18,18 @@ class PrepareBaseModelConfig:
     params_model_name: str
     params_optimizer: str
     params_classes: int
+
+@dataclass
+class TrainingConfig:
+    root_dir: Path
+    trained_model_path: Path 
+    updated_base_model_path: Path
+    training_data_path: Path
+    dataset_path: Path
+    model_name: str
+    params_epochs: int
+    params_batch_size: int
+    params_is_augmentation: bool
+    params_learning_rate: float
+    params_num_classes: int
+    params_image_size: list
