@@ -1,5 +1,5 @@
 from FacialExpressionRecognition.constants import *
-from FacialExpressionRecognition.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig
+from FacialExpressionRecognition.entity.config_entity import DataIngestionConfig, EvaluationConfig, PrepareBaseModelConfig, TrainingConfig
 from FacialExpressionRecognition.utils.common import read_yaml, create_directories
 import os
 
@@ -81,3 +81,14 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model = self.config.training.trained_model_path,
+            data_path = self.config.training.dataset_path,
+            mlflow_uri = "https://dagshub.com/nhut-nam/FaceEmotionRecognitionSystemTest.mlflow",
+            params_image_size = self.params.IMAGE_SIZE,
+            params_batch_size = self.params.BATCH_SIZE,
+            all_params = self.params
+        )
+        return eval_config

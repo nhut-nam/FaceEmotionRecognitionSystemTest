@@ -1,6 +1,11 @@
 import os
 from pathlib import Path
 import logging
+import dagshub
+
+REPO_OWNER = 'nhut-nam'
+REPO_NAME = 'FaceEmotionRecognitionSystemTest'
+dagshub.init(repo_owner=REPO_OWNER, repo_name=REPO_NAME, mlflow=True)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

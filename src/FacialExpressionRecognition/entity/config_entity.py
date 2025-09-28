@@ -34,3 +34,12 @@ class TrainingConfig:
     params_learning_rate: float
     params_num_classes: int
     params_image_size: list
+
+@dataclass
+class EvaluationConfig:
+    path_of_model: Path
+    data_path: Path
+    mlflow_uri: str
+    params_image_size: list
+    params_batch_size: int
+    all_params: dict

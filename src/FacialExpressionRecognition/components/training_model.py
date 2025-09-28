@@ -80,5 +80,5 @@ class Training:
 
     @staticmethod
     def save_model(model, path):
-        torch.save(model, path)
+        torch.save(model.state_dict(), path)
         logger.info(f"Model saved at {path}")

@@ -46,7 +46,7 @@ def create_directories(path_to_directories: list, verbose=True):
             logger.info(f"Directory created at: {path}")
 
 @ensure_annotations
-def save_json(path: Path, data: dict[str, Any]):
+def save_json(path: Path, data: dict):
     """Saves a dictionary to a json file
 
     Args:

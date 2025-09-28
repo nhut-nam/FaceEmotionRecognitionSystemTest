@@ -11,3 +11,6 @@ venv/
 
 logs/
 *.log
+
+__pycache__/
+mlruns/
