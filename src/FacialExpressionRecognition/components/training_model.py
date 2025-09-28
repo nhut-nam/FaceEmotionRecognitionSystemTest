@@ -27,6 +27,17 @@ class Training:
             os.makedirs(self.config.dataset_path, exist_ok=True)
             zip_ref.extractall(self.config.dataset_path)
 
+    def get_optimizer(self):
+        if self.config.optimizer_name == "adam":
+            optimizer = torch.optim.Adam(self.model.parameters(), lr=self.config.params_learning_rate)
+        elif self.config.optimizer_name == "sgd":
+            optimizer = torch.optim.SGD(self.model.parameters(), lr=self.config.params_learning_rate, momentum=0.9)
+        elif self.config.optimizer_name == "adamw":
+            optimizer = torch.optim.AdamW(self.model.parameters(), lr=self.config.params_learning_rate)
+        else:
+            raise ValueError(f"Optimizer {self.config.optimizer_name} not supported.")
+        return optimizer
+
     def train(self):
         train_transforms = torchvision.transforms.Compose([
             torchvision.transforms.Resize((self.config.params_image_size[0], self.config.params_image_size[1])),
@@ -43,7 +54,7 @@ class Training:
         self.model = self.model.to(device)
 
         criterion = torch.nn.CrossEntropyLoss()
-        optimizer = torch.optim.Adam(self.model.parameters(), lr=self.config.params_learning_rate)
+        optimizer = self.get_optimizer()
 
         num_epochs = self.config.params_epochs
 

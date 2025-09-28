@@ -865,3 +865,37 @@ RuntimeError: Error(s) in loading state_dict for ResNet:
 [2025-09-28 10:16:37,200: INFO: common]: Directory created at: artifacts\training
 [2025-09-28 10:26:43,975: INFO: 3183951286]: Model saved at artifacts\training\model.h5
 [2025-09-28 10:26:43,987: INFO: 4016484038]: Training completed successfully.
+[2025-09-28 15:59:39,719: INFO: main]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-28 15:59:39,722: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 15:59:39,725: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 15:59:39,726: INFO: common]: Directory created at: artifacts
+[2025-09-28 15:59:39,726: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-28 15:59:44,324: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-28 15:59:44,325: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-28 15:59:44,325: INFO: main]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-28 15:59:44,325: INFO: main]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-28 15:59:44,327: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 15:59:44,328: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 15:59:44,328: INFO: common]: Directory created at: artifacts
+[2025-09-28 15:59:44,329: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-28 15:59:44,329: ERROR: main]: >>>>>> stage Prepare Base Model stage failed <<<<<<
+[2025-09-28 15:59:44,329: ERROR: main]: PrepareBaseModel.get_model() got an unexpected keyword argument 'pretrained'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 21, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.update_base_model()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 26, in update_base_model
+    model = self.get_model(pretrained=True)
+TypeError: PrepareBaseModel.get_model() got an unexpected keyword argument 'pretrained'
+[2025-09-28 15:59:44,329: INFO: main]: >>>>>> stage Training stage started <<<<<<
+[2025-09-28 15:59:44,331: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 15:59:44,332: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 15:59:44,333: INFO: common]: Directory created at: artifacts
+[2025-09-28 15:59:44,333: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 16:09:55,091: INFO: training_model]: Model saved at artifacts\training\model.pth
+[2025-09-28 16:09:55,112: INFO: main]: >>>>>> stage Training stage completed <<<<<<
+
+x==========x

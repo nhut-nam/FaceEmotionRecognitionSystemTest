@@ -12,9 +12,9 @@ class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
         self.config = config
     
-    def get_model(self):
+    def get_model(self, pretrained=True):
         if self.config.model_name == "resnet34":
-            self.model = get_resnet34_model(num_classes=self.config.params_num_classes)
+            self.model = get_resnet34_model(pretrained=pretrained, num_classes=self.config.params_num_classes)
             self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
             self.model.fc = torch.nn.Linear(self.model.fc.in_features, self.config.params_num_classes)
             self.model.eval()

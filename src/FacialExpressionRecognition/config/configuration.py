@@ -62,14 +62,16 @@ class ConfigurationManager:
         params_num_classes = params.NUM_CLASSES
         params_image_size = params.IMAGE_SIZE
         params_model_name = params.MODEL_NAME
+        params_optimizer_name = params.OPTIMIZER
 
-        training_config = TrainingConfig(   
+        training_config = TrainingConfig(
             root_dir=Path(artifacts_root),
             trained_model_path=Path(trained_model_path),
             updated_base_model_path=Path(updated_base_model_path),
             training_data_path=Path(training_data),
             dataset_path=Path(dataset_path),
             model_name=params_model_name,
+            optimizer_name=params_optimizer_name,
             params_epochs=params_epochs,
             params_batch_size=params_batch_size,
             params_is_augmentation=params_is_augmentation,

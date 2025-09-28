@@ -27,6 +27,7 @@ class TrainingConfig:
     training_data_path: Path
     dataset_path: Path
     model_name: str
+    optimizer_name: str
     params_epochs: int
     params_batch_size: int
     params_is_augmentation: bool
