@@ -855,3 +855,13 @@ Traceback (most recent call last):
 RuntimeError: Error(s) in loading state_dict for ResNet:
 	size mismatch for fc.weight: copying a param with shape torch.Size([7, 512]) from checkpoint, the shape in current model is torch.Size([1000, 512]).
 	size mismatch for fc.bias: copying a param with shape torch.Size([7]) from checkpoint, the shape in current model is torch.Size([1000]).
+[2025-09-28 10:15:14,987: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:15:14,990: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:15:14,992: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:15:14,993: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:16:37,187: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 10:16:37,198: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 10:16:37,199: INFO: common]: Directory created at: artifacts
+[2025-09-28 10:16:37,200: INFO: common]: Directory created at: artifacts\training
+[2025-09-28 10:26:43,975: INFO: 3183951286]: Model saved at artifacts\training\model.h5
+[2025-09-28 10:26:43,987: INFO: 4016484038]: Training completed successfully.

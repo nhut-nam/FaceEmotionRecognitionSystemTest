@@ -40,7 +40,7 @@ class ConfigurationManager:
             params_learning_rate=params.LEARNING_RATE,
             params_model_name=params.MODEL_NAME,
             params_optimizer=params.OPTIMIZER,
-            params_classes=params.CLASSES,
+            params_classes=params.NUM_CLASSES,
         )
         return prepare_base_model_config
     
