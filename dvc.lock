@@ -1,0 +1,49 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python 
+      src\FacialExpressionRecognition\pipeline\stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 78c6c48f1b3891fb2048aa7784734ecf
+      size: 613
+    - path: src\FacialExpressionRecognition\pipeline\stage_01_data_ingestion.py
+      hash: md5
+      md5: be984488f2cc2bb21d26e8a323d1c4c9
+      size: 902
+    outs:
+    - path: artifacts/data_ingestion/
+      hash: md5
+      md5: 5d58427e4f7430f69aa3acfb94ee3c01.dir
+      size: 39990994
+      nfiles: 1
+  prepare_base_model:
+    cmd: python 
+      src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 78c6c48f1b3891fb2048aa7784734ecf
+      size: 613
+    - path: 
+        src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py
+      hash: md5
+      md5: d4da71be85bb60d17cbec01562f31fb2
+      size: 972
+    params:
+      params.yaml:
+        IMAGE_SIZE:
+        - 64
+        - 64
+        - 3
+        LEARNING_RATE: 0.01
+        MODEL_NAME: resnet34
+        NUM_CLASSES: 7
+        OPTIMIZER: adam
+    outs:
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: dd6d4b975ec05f7ef1e6e0be5d3a7cf9.dir
+      size: 85292971
+      nfiles: 1
