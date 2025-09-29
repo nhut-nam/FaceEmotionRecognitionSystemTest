@@ -1601,3 +1601,282 @@ x==========x
 [2025-09-29 13:43:12,573: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage completed <<<<<<
 
 x==========x
+[2025-09-29 14:11:43,858: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:11:43,858: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:11:58,770: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:11:58] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:11:59,030: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:11:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-29 14:14:39,176: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:14:39] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:14:58,951: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:14:58] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:15:43,025: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:15:43,025: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:15:47,232: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:15:47] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:15:47,451: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:15:47] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:16:42,917: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:16:42] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:16:43,269: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:16:43] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:16:51,374: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:16:51,374: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:16:54,013: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:16:54] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:16:54,246: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:16:54] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:19:16,580: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:19:16,580: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:19:18,843: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:19:18] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:19:19,072: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:19:19] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:19:23,706: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 34, in predict
+    decode_image(message, clApp.filename)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+TypeError: decode_image() takes 1 positional argument but 2 were given
+[2025-09-29 14:19:23,712: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:19:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 14:19:27,501: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:19:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:22:56,401: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:22:56,402: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:23:03,111: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:23:03] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:23:03,361: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:23:03] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:23:03,466: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:23:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:23:06,811: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 34, in predict
+    decode_image(message, clApp.filename)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\utils\common.py", line 119, in decode_image
+    imgdata = base64.b64decode(image_base64)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2025-09-29 14:23:06,817: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:23:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 14:29:13,268: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:29:13,268: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:29:15,152: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:29:15] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:29:15,376: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:29:15] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:29:15,500: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:29:15] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:29:19,041: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 34, in predict
+    decode_image(message, clApp.filename)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\utils\common.py", line 119, in decode_image
+    imgdata = base64.b64decode(image_base64)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+[2025-09-29 14:29:19,045: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:29:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 14:30:52,689: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:30:52,689: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:30:54,666: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:30:54] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:30:54,925: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:30:54] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:30:55,003: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:30:55] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:30:58,925: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 35, in predict
+    prediction = clApp.classifier.predict()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\prediction.py", line 14, in predict
+    model.load_state_dict(torch.load(os.path.join("training", "model.pth")))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'training\\model.pth'
+[2025-09-29 14:30:58,930: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:30:58] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 14:31:47,137: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:31:47,138: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:31:51,071: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:31:51] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:31:51,335: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:31:51] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:31:51,415: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:31:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:31:56,077: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 37, in predict
+    return jsonify(prediction)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ndarray is not JSON serializable
+[2025-09-29 14:31:56,085: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:31:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 14:32:47,480: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:32:47,481: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:32:47,940: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:32:47] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:32:48,198: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:32:48] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:32:48,275: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:32:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:32:51,289: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:32:51] "POST /predict HTTP/1.1" 200 -
+[2025-09-29 14:34:30,616: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 14:34:30,617: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 14:34:31,523: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:34:31] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:34:31,764: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:34:31] "GET / HTTP/1.1" 200 -
+[2025-09-29 14:34:31,856: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:34:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 14:34:37,926: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 14:34:37] "POST /predict HTTP/1.1" 200 -
+[2025-09-29 18:52:54,849: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 18:52:54,849: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 18:52:59,099: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:52:59] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:52:59,351: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:52:59] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:52:59,439: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:52:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 18:53:03,563: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 37, in predict
+    return jsonify({"prediction": prediction.tolist(), "accuracy": accuracy.tolist()})
+AttributeError: 'int' object has no attribute 'tolist'
+[2025-09-29 18:53:03,567: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:53:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 18:53:28,028: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 18:53:28,028: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 18:53:35,868: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:53:35] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:53:36,087: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:53:36] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:53:36,206: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:53:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 18:53:39,380: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\app.py", line 37, in predict
+    return jsonify({"prediction": prediction.tolist(), "accuracy": accuracy})
+AttributeError: 'int' object has no attribute 'tolist'
+[2025-09-29 18:53:39,384: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:53:39] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-09-29 18:54:00,174: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 18:54:00,174: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 18:54:01,391: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:54:01] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:54:01,654: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:54:01] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:54:01,731: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:54:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 18:54:04,765: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:54:04] "POST /predict HTTP/1.1" 200 -
+[2025-09-29 18:55:57,815: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-09-29 18:55:57,815: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-09-29 18:55:59,880: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:55:59] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:56:00,087: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:00] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:56:00,221: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 18:56:06,988: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:06] "POST /predict HTTP/1.1" 200 -
+[2025-09-29 18:56:09,860: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:09] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:56:10,127: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:10] "GET / HTTP/1.1" 200 -
+[2025-09-29 18:56:10,190: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-09-29 18:56:12,981: INFO: _internal]: 127.0.0.1 - - [29/Sep/2025 18:56:12] "POST /predict HTTP/1.1" 200 -

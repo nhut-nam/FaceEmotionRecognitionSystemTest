@@ -115,36 +115,20 @@ def get_size(path: Path) -> str:
     return f"{size_in_kb} KB"
 
 
-@ensure_annotations
-def decode_image(image_base64: str) -> bytes:
-    """Decodes a base64 encoded image string to bytes
+def decode_image(image_base64: str, file_name):
+    if image_base64.startswith("data:image"):
+        image_base64 = image_base64.split(",")[1]
 
-    Args:
-        image_base64 (str): Base64 encoded image string
+    missing_padding = len(image_base64) % 4
+    if missing_padding:
+        image_base64 += "=" * (4 - missing_padding)
+        
+    imgdata = base64.b64decode(image_base64)
+    with open(file_name, 'wb') as f:
+        f.write(imgdata)
+        f.close()
 
-    Returns:
-        bytes: Decoded image in bytes
-    """
-    try:
-        image_bytes = base64.b64decode(image_base64)
-        logger.info("Image decoded successfully")
-        return image_bytes
-    except Exception as e:
-        raise e
     
-@ensure_annotations
-def encode_image(image_bytes: bytes) -> str:
-    """Encodes image bytes to a base64 string
-
-    Args:
-        image_bytes (bytes): Image in bytes
-
-    Returns:
-        str: Base64 encoded image string
-    """
-    try:
-        image_base64 = base64.b64encode(image_bytes).decode('utf-8')
-        logger.info("Image encoded successfully")
-        return image_base64
-    except Exception as e:
-        raise e
+def encoder_image_into_base64(cropped_image_path):
+     with open(cropped_image_path, "rb") as f:
+        return base64.b64encode(f.read())
