@@ -47,3 +47,77 @@ stages:
       md5: dd6d4b975ec05f7ef1e6e0be5d3a7cf9.dir
       size: 85292971
       nfiles: 1
+  training:
+    cmd: python 
+      src\FacialExpressionRecognition\pipeline\stage_03_training_model.py
+    deps:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: 5d58427e4f7430f69aa3acfb94ee3c01.dir
+      size: 39990994
+      nfiles: 1
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: dd6d4b975ec05f7ef1e6e0be5d3a7cf9.dir
+      size: 85292971
+      nfiles: 1
+    - path: config/config.yaml
+      hash: md5
+      md5: 78c6c48f1b3891fb2048aa7784734ecf
+      size: 613
+    - path: src\FacialExpressionRecognition\pipeline\stage_03_training_model.py
+      hash: md5
+      md5: 3a05e841d11b7759b06db4205a639087
+      size: 823
+    params:
+      params.yaml:
+        AUGMENTATION: true
+        BATCH_SIZE: 64
+        EPOCHS: 2
+        IMAGE_SIZE:
+        - 64
+        - 64
+        - 3
+        LEARNING_RATE: 0.01
+        MODEL_NAME: resnet34
+        NUM_CLASSES: 7
+        OPTIMIZER: adam
+    outs:
+    - path: artifacts/training/model.pth
+      hash: md5
+      md5: 3071c52a6446989a8d1defbcf1cf94d0
+      size: 85278411
+  evaluation:
+    cmd: python 
+      src\FacialExpressionRecognition\pipeline\stage_04_model_evalution_with_mlflow.py
+    deps:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: 5d58427e4f7430f69aa3acfb94ee3c01.dir
+      size: 39990994
+      nfiles: 1
+    - path: artifacts/training/model.pth
+      hash: md5
+      md5: 3071c52a6446989a8d1defbcf1cf94d0
+      size: 85278411
+    - path: config/config.yaml
+      hash: md5
+      md5: 78c6c48f1b3891fb2048aa7784734ecf
+      size: 613
+    - path: 
+        src\FacialExpressionRecognition\pipeline\stage_04_model_evalution_with_mlflow.py
+      hash: md5
+      md5: 4ab802fd76a503c720336c70982b368b
+      size: 883
+    params:
+      params.yaml:
+        BATCH_SIZE: 64
+        IMAGE_SIZE:
+        - 64
+        - 64
+        - 3
+    outs:
+    - path: scores.json
+      hash: md5
+      md5: 8b2c99798113cb0ea323755fa0d0659b
+      size: 237

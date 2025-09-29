@@ -13,13 +13,13 @@ class PrepareBaseModel:
         self.config = config
     
     def get_model(self, pretrained=True):
-        if self.config.model_name == "resnet34":
-            self.model = get_resnet34_model(pretrained=pretrained, num_classes=self.config.params_num_classes)
-            self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
-            self.model.fc = torch.nn.Linear(self.model.fc.in_features, self.config.params_num_classes)
+        if self.config.params_model_name == "resnet34":
+            self.model = get_resnet34_model(pretrained=pretrained, num_classes=self.config.params_classes)
+            self.model.fc = torch.nn.Linear(self.model.fc.in_features, self.config.params_classes)
             self.model.eval()
+            return self.model
         else:
-            raise ValueError(f"Model {self.config.model_name} not supported.")
+            raise ValueError(f"Model {self.config.params_model_name} not supported.")
 
 
     def update_base_model(self):

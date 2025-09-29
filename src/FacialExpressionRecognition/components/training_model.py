@@ -16,7 +16,6 @@ class Training:
         if self.config.model_name == "resnet34":
             self.model = get_resnet34_model(num_classes=self.config.params_num_classes)
             self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
-            self.model.fc = torch.nn.Linear(self.model.fc.in_features, self.config.params_num_classes)
             self.model.eval()
         else:
             raise ValueError(f"Model {self.config.model_name} not supported.")

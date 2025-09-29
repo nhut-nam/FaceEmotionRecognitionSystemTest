@@ -1245,3 +1245,359 @@ x==========x
 [2025-09-28 20:02:53,895: INFO: main]: >>>>>> stage Model Evaluation stage completed <<<<<<
 
 x==========x
+[2025-09-29 08:26:53,794: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 08:26:53,806: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 08:26:53,820: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 08:26:53,821: INFO: common]: Directory created at: artifacts
+[2025-09-29 11:57:41,348: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 11:57:41,350: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 11:57:41,352: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 11:57:41,353: INFO: common]: Directory created at: artifacts
+[2025-09-29 11:57:41,353: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 11:57:45,686: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 11:57:45,686: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 11:57:45,686: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 11:58:13,458: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 11:58:13,461: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 11:58:13,462: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 11:58:13,463: INFO: common]: Directory created at: artifacts
+[2025-09-29 11:58:13,463: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 11:58:17,198: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 11:58:17,198: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 11:58:17,199: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 11:59:22,852: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 11:59:22,854: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 11:59:22,856: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 11:59:22,857: INFO: common]: Directory created at: artifacts
+[2025-09-29 11:59:22,857: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 11:59:26,534: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 11:59:26,535: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 11:59:26,535: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:05:24,522: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 12:05:24,523: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:05:24,525: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:05:24,525: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:05:24,525: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 12:05:28,011: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 12:05:28,012: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 12:05:28,012: INFO: stage_01_data_ingestion]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:05:32,076: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:05:32,079: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:05:32,080: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:05:32,080: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:05:32,081: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:05:32,081: ERROR: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage failed <<<<<<
+[2025-09-29 12:05:32,081: ERROR: stage_02_prepare_base_model]: 'PrepareBaseModelConfig' object has no attribute 'model_name'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py", line 21, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.update_base_model()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 26, in update_base_model
+    model = self.get_model(pretrained=True)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 16, in get_model
+    if self.config.model_name == "resnet34":
+AttributeError: 'PrepareBaseModelConfig' object has no attribute 'model_name'
+[2025-09-29 12:05:35,922: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:05:35,924: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:05:35,925: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:05:35,925: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:05:35,927: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:07:19,493: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:07:19,494: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:07:19,496: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:07:19,496: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:07:19,497: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:09:01,491: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:09:01,493: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:09:01,494: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:09:01,494: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:09:01,495: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:11:33,476: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:11:33,478: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:11:33,479: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:11:33,480: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:11:33,480: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:17:01,096: INFO: main]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 12:17:01,098: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:17:01,100: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:17:01,100: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:17:01,101: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 12:17:04,540: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 12:17:04,541: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 12:17:04,541: INFO: main]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:17:04,541: INFO: main]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:17:04,542: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:17:04,544: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:17:04,544: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:17:04,545: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:17:04,855: ERROR: main]: >>>>>> stage Prepare Base Model stage failed <<<<<<
+[2025-09-29 12:17:04,855: ERROR: main]: 'NoneType' object has no attribute 'state_dict'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 22, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.update_base_model()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 26, in update_base_model
+    self.save_model(model, self.config.updated_base_model_path)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 30, in save_model
+    torch.save(model.state_dict(), model_path)
+AttributeError: 'NoneType' object has no attribute 'state_dict'
+[2025-09-29 12:17:04,856: INFO: main]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:17:04,858: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:17:04,860: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:17:04,860: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:17:04,861: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:17:05,179: ERROR: main]: >>>>>> stage Training stage failed <<<<<<
+[2025-09-29 12:17:05,180: ERROR: main]: [Errno 2] No such file or directory: 'artifacts\\prepare_base_model\\base_model_updated.pth'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 33, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_03_training_model.py", line 15, in main
+    training.get_model()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\training_model.py", line 18, in get_model
+    self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\prepare_base_model\\base_model_updated.pth'
+[2025-09-29 12:17:05,181: INFO: main]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 12:17:05,184: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:17:05,187: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:17:05,187: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:17:05,434: ERROR: main]: >>>>>> stage Model Evaluation stage failed <<<<<<
+[2025-09-29 12:17:05,434: ERROR: main]: [Errno 2] No such file or directory: 'artifacts/training/model.pth'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 44, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_04_model_evalution_with_mlflow.py", line 15, in main
+    model_eval.evaluate()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\model_evalution_with_mlflow.py", line 19, in evaluate
+    self.model = self.load_model(model_path=self.config.path_of_model, params=self.config.all_params)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\model_evalution_with_mlflow.py", line 78, in load_model
+    checkpoint = torch.load(model_path, map_location=torch.device('cpu'), weights_only=False)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/training/model.pth'
+[2025-09-29 12:19:53,440: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:19:53,442: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:19:53,444: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:19:53,444: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:19:53,444: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:20:05,181: INFO: main]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 12:20:05,183: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:20:05,184: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:20:05,185: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:20:05,185: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 12:20:08,596: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 12:20:08,596: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 12:20:08,597: INFO: main]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:20:08,597: INFO: main]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:20:08,599: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:20:08,601: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:20:08,601: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:20:08,602: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:20:08,895: ERROR: main]: >>>>>> stage Prepare Base Model stage failed <<<<<<
+[2025-09-29 12:20:08,895: ERROR: main]: 'NoneType' object has no attribute 'state_dict'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 22, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.update_base_model()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 26, in update_base_model
+    self.save_model(model, self.config.updated_base_model_path)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\prepare_base_model.py", line 30, in save_model
+    torch.save(model.state_dict(), model_path)
+AttributeError: 'NoneType' object has no attribute 'state_dict'
+[2025-09-29 12:20:08,896: INFO: main]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:20:08,899: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:20:08,901: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:20:08,901: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:20:08,901: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:20:09,227: ERROR: main]: >>>>>> stage Training stage failed <<<<<<
+[2025-09-29 12:20:09,229: ERROR: main]: [Errno 2] No such file or directory: 'artifacts\\prepare_base_model\\base_model_updated.pth'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 33, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_03_training_model.py", line 15, in main
+    training.get_model()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\training_model.py", line 18, in get_model
+    self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\prepare_base_model\\base_model_updated.pth'
+[2025-09-29 12:20:09,231: INFO: main]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 12:20:09,233: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:20:09,235: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:20:09,236: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:20:09,529: ERROR: main]: >>>>>> stage Model Evaluation stage failed <<<<<<
+[2025-09-29 12:20:09,529: ERROR: main]: [Errno 2] No such file or directory: 'artifacts/training/model.pth'
+Traceback (most recent call last):
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\main.py", line 44, in <module>
+    obj.main()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\pipeline\stage_04_model_evalution_with_mlflow.py", line 15, in main
+    model_eval.evaluate()
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\model_evalution_with_mlflow.py", line 19, in evaluate
+    self.model = self.load_model(model_path=self.config.path_of_model, params=self.config.all_params)
+  File "F:\ProjectAI\FaceEmotionRecognitionSystem\src\FacialExpressionRecognition\components\model_evalution_with_mlflow.py", line 78, in load_model
+    checkpoint = torch.load(model_path, map_location=torch.device('cpu'), weights_only=False)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\namnh\miniconda3\envs\FER\lib\site-packages\torch\serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/training/model.pth'
+[2025-09-29 12:23:37,625: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:23:37,627: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:23:37,629: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:23:37,629: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:23:37,629: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:23:49,243: INFO: main]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-09-29 12:23:49,246: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:23:49,248: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:23:49,248: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:23:49,248: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-09-29 12:23:52,920: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-09-29 12:23:52,921: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-09-29 12:23:52,921: INFO: main]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:23:52,921: INFO: main]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:23:52,924: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:23:52,926: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:23:52,927: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:23:52,927: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:23:53,289: INFO: main]: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:23:53,289: INFO: main]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:23:53,292: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:23:53,294: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:23:53,294: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:23:53,295: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:36:50,132: INFO: training_model]: Model saved at artifacts\training\model.pth
+[2025-09-29 12:36:50,147: INFO: main]: >>>>>> stage Training stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:36:50,147: INFO: main]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 12:36:50,150: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:36:50,153: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:36:50,154: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:39:27,533: INFO: common]: JSON file saved at: scores.json
+[2025-09-29 12:39:29,391: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-29 12:39:29,397: INFO: helpers]: Accessing as nhut-nam
+[2025-09-29 12:39:29,822: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/repos/nhut-nam/FaceEmotionRecognitionSystemTest "HTTP/1.1 200 OK"
+[2025-09-29 12:39:30,220: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-29 12:39:30,224: INFO: helpers]: Initialized MLflow to track repo "nhut-nam/FaceEmotionRecognitionSystemTest"
+[2025-09-29 12:39:30,225: INFO: helpers]: Repository nhut-nam/FaceEmotionRecognitionSystemTest initialized!
+[2025-09-29 12:40:29,038: INFO: main]: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:40:40,238: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:40:40,241: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:40:40,243: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:40:40,244: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:40:40,244: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:42:17,769: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:42:17,773: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:42:17,775: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:42:17,776: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:42:17,776: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:42:18,234: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:43:26,981: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:43:26,983: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:43:26,984: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:43:26,984: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:43:26,985: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:43:42,213: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:43:42,215: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:43:42,216: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:43:42,217: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:43:42,217: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:43:42,585: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:46:18,254: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:46:18,258: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:46:18,260: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:46:18,261: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:46:18,261: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 12:47:14,464: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-09-29 12:47:14,466: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:47:14,467: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:47:14,467: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:47:14,468: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-09-29 12:47:14,796: INFO: stage_02_prepare_base_model]: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[2025-09-29 12:48:49,705: INFO: stage_03_training_model]: >>>>>> stage Training stage started <<<<<<
+[2025-09-29 12:48:49,707: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 12:48:49,709: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 12:48:49,709: INFO: common]: Directory created at: artifacts
+[2025-09-29 12:48:49,710: INFO: common]: Directory created at: artifacts\training
+[2025-09-29 13:01:12,900: INFO: training_model]: Model saved at artifacts\training\model.pth
+[2025-09-29 13:01:12,919: INFO: stage_03_training_model]: >>>>>> stage Training stage completed <<<<<<
+
+x==========x
+[2025-09-29 13:25:37,535: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 13:25:37,547: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 13:25:37,550: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 13:25:37,550: INFO: common]: Directory created at: artifacts
+[2025-09-29 13:32:07,260: INFO: common]: JSON file saved at: scores.json
+[2025-09-29 13:32:08,776: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-29 13:32:08,781: INFO: helpers]: Accessing as nhut-nam
+[2025-09-29 13:32:09,182: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/repos/nhut-nam/FaceEmotionRecognitionSystemTest "HTTP/1.1 200 OK"
+[2025-09-29 13:32:09,570: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-29 13:32:09,572: INFO: helpers]: Initialized MLflow to track repo "nhut-nam/FaceEmotionRecognitionSystemTest"
+[2025-09-29 13:32:09,573: INFO: helpers]: Repository nhut-nam/FaceEmotionRecognitionSystemTest initialized!
+[2025-09-29 13:33:11,940: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x
+[2025-09-29 13:37:15,105: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 13:37:15,108: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 13:37:15,109: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 13:37:15,110: INFO: common]: Directory created at: artifacts
+[2025-09-29 13:38:50,308: INFO: common]: JSON file saved at: scores.json
+[2025-09-29 13:38:51,589: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-29 13:38:51,593: INFO: helpers]: Accessing as nhut-nam
+[2025-09-29 13:38:52,046: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/repos/nhut-nam/FaceEmotionRecognitionSystemTest "HTTP/1.1 200 OK"
+[2025-09-29 13:38:52,433: INFO: _client]: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-29 13:38:52,438: INFO: helpers]: Initialized MLflow to track repo "nhut-nam/FaceEmotionRecognitionSystemTest"
+[2025-09-29 13:38:52,440: INFO: helpers]: Repository nhut-nam/FaceEmotionRecognitionSystemTest initialized!
+[2025-09-29 13:39:52,818: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x
+[2025-09-29 13:41:34,127: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage started <<<<<<
+[2025-09-29 13:41:34,129: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-29 13:41:34,130: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-29 13:41:34,131: INFO: common]: Directory created at: artifacts
+[2025-09-29 13:43:12,571: INFO: common]: JSON file saved at: scores.json
+[2025-09-29 13:43:12,573: INFO: stage_04_model_evalution_with_mlflow]: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x
