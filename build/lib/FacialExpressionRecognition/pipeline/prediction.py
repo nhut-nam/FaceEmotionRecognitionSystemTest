@@ -20,8 +20,7 @@ class PredictionPipeline:
         with torch.no_grad():
             image = self.load_image(image_name)
             image = self.preprocess_image(image)
-            print(image.shape)
-            
+
             output = model(image)
 
             # Softmax để lấy xác suất
@@ -39,7 +38,7 @@ class PredictionPipeline:
 
     def preprocess_image(self, image):
         transform = transforms.Compose([
-            transforms.Resize((64, 64)),
+            transforms.Resize((224, 224)),
             transforms.ToTensor()
         ])
         return transform(image).unsqueeze(0)

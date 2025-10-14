@@ -8,7 +8,6 @@ from torchvision.datasets import ImageFolder
 from urllib.parse import urlparse
 import mlflow.pytorch
 from FacialExpressionRecognition.models.resnet34 import get_resnet34_model
-from FacialExpressionRecognition.models.emonext import get_model 
 from FacialExpressionRecognition.utils.common import save_json
 
 class ModelEvaluation:
@@ -75,11 +74,7 @@ class ModelEvaluation:
 
     @staticmethod
     def load_model(model_path, params):
-        if params['MODEL_NAME'] == 'resnet34':
-            model = get_resnet34_model(pretrained=False, num_classes=params['NUM_CLASSES'])
-        elif params['MODEL_NAME'] == 'emonext':
-            model = get_model(num_classes=params['NUM_CLASSES'])
-
+        model = get_resnet34_model(pretrained=False, num_classes=params['NUM_CLASSES'])
         checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
         model.load_state_dict(checkpoint)
         
@@ -88,31 +83,21 @@ class ModelEvaluation:
 
     def log_into_mlflow(self):
         import dagshub
-        import mlflow
-        from urllib.parse import urlparse
-
         REPO_OWNER = 'nhut-nam'
         REPO_NAME = 'FaceEmotionRecognitionSystemTest'
-
-        # Khởi tạo kết nối với DagsHub (đã tự set tracking và registry URI)
         dagshub.init(repo_owner=REPO_OWNER, repo_name=REPO_NAME, mlflow=True)
 
+        mlflow.set_registry_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
-
         with mlflow.start_run():
             mlflow.log_params(self.config.all_params)
             for key, value in self.metrics.items():
                 mlflow.log_metric(key, value)
 
             if tracking_url_type_store != "file":
-                mlflow.pytorch.log_model(
-                    self.model,
-                    "model",
-                    # registered_model_name=self.config.all_params["MODEL_NAME"]
-                )
+                mlflow.pytorch.log_model(self.model, "model", registered_model_name=self.config.all_params['MODEL_NAME'])
             else:
                 mlflow.pytorch.log_model(self.model, "model")
-
 
     def save_score(self):
         save_json(path=Path("scores.json"), data=self.metrics)

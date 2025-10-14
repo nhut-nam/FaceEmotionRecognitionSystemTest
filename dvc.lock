@@ -37,15 +37,15 @@ stages:
         - 64
         - 64
         - 3
-        LEARNING_RATE: 0.01
-        MODEL_NAME: resnet34
+        LEARNING_RATE: 0.001
+        MODEL_NAME: emonext
         NUM_CLASSES: 7
-        OPTIMIZER: adam
+        OPTIMIZER: adamw
     outs:
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: dd6d4b975ec05f7ef1e6e0be5d3a7cf9.dir
-      size: 85292971
+      md5: 8588dbead2074f980f7a00f973bf3338.dir
+      size: 119113863
       nfiles: 1
   training:
     cmd: python 
@@ -58,7 +58,7 @@ stages:
       nfiles: 1
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: dd6d4b975ec05f7ef1e6e0be5d3a7cf9.dir
+      md5: c22a9d76929a7e9b8e5a29d6e96cce9e.dir
       size: 85292971
       nfiles: 1
     - path: config/config.yaml
@@ -73,19 +73,19 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 64
-        EPOCHS: 2
+        EPOCHS: 5
         IMAGE_SIZE:
         - 64
         - 64
         - 3
-        LEARNING_RATE: 0.01
+        LEARNING_RATE: 0.001
         MODEL_NAME: resnet34
         NUM_CLASSES: 7
-        OPTIMIZER: adam
+        OPTIMIZER: adamw
     outs:
     - path: artifacts/training/model.pth
       hash: md5
-      md5: 3071c52a6446989a8d1defbcf1cf94d0
+      md5: 1910986794d408867db6fceee6c1594e
       size: 85278411
   evaluation:
     cmd: python 
@@ -98,7 +98,7 @@ stages:
       nfiles: 1
     - path: artifacts/training/model.pth
       hash: md5
-      md5: 3071c52a6446989a8d1defbcf1cf94d0
+      md5: 1910986794d408867db6fceee6c1594e
       size: 85278411
     - path: config/config.yaml
       hash: md5
@@ -107,8 +107,8 @@ stages:
     - path: 
         src\FacialExpressionRecognition\pipeline\stage_04_model_evalution_with_mlflow.py
       hash: md5
-      md5: 4ab802fd76a503c720336c70982b368b
-      size: 883
+      md5: ae91035f43b79e22aa3fbc5c7256c28b
+      size: 881
     params:
       params.yaml:
         BATCH_SIZE: 64
@@ -119,5 +119,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 8b2c99798113cb0ea323755fa0d0659b
-      size: 237
+      md5: 699abfc3a9235653b84951512aa3346f
+      size: 241
