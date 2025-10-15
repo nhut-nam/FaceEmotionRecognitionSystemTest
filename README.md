@@ -22,9 +22,10 @@ conda create -n FER python=3.10 -y
 conda activate FER
 ```
 
-### STEP 02- Install requirements
+### STEP 02- Install requirements and run setup
 ```bash
 pip install -r requirements.txt
+pip install -e .
 ```
 Optional: install MLflow if you want experiment tracking
 ```bash
