@@ -18,6 +18,7 @@ class Training:
         self.config = config
         self.early_stopping_patience = 12
         self.best_val_accuracy = 0
+        self.best_test_accuracy = 0
         self.scaler = GradScaler(enabled=False)
     
     def get_model(self):
@@ -31,6 +32,7 @@ class Training:
                 param.requires_grad = True
         elif self.config.model_name == "emonext":
             self.model = get_model(num_classes=self.config.params_num_classes)
+            self.model.load_state_dict(torch.load(self.config.updated_base_model_path))
             self.model.eval()
         else:
             raise ValueError(f"Model {self.config.model_name} not supported.")
@@ -112,11 +114,14 @@ class Training:
         for epoch in range(num_epochs):
             train_loss, train_accuracy = self.train_epoch()
             val_loss, val_accuracy = self.val_epoch()
+            test_accuracy = self.test_model()
             logger.info(f"Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_loss:.4f}, Train Accuracy: {train_accuracy:.2f}%, Val Loss: {val_loss:.4f}, Val Accuracy: {val_accuracy:.2f}%")
             if val_accuracy > self.best_val_accuracy:
-                self.save_model(self.model, self.config.trained_model_path)
                 counter = 0
                 self.best_val_accuracy = val_accuracy
+                if test_accuracy > self.best_test_accuracy:
+                    self.best_test_accuracy = test_accuracy
+                    self.save_model(self.model, self.config.trained_model_path)
             else:
                 counter += 1
                 if counter >= self.early_stopping_patience:
@@ -227,6 +232,7 @@ class Training:
             .item()
         )
         print("Test Accuracy: %.4f %%" % (accuracy * 100.0))
+        return accuracy * 100.0
 
 
     @staticmethod

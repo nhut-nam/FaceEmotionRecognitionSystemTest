@@ -37,15 +37,15 @@ stages:
         - 64
         - 64
         - 3
-        LEARNING_RATE: 0.001
+        LEARNING_RATE: 0.0001
         MODEL_NAME: emonext
         NUM_CLASSES: 7
         OPTIMIZER: adamw
     outs:
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: 8588dbead2074f980f7a00f973bf3338.dir
-      size: 119113863
+      md5: c2feb2fc5ff409cd7e42c3aeaede82b5.dir
+      size: 112017983
       nfiles: 1
   training:
     cmd: python 
@@ -58,8 +58,8 @@ stages:
       nfiles: 1
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: c22a9d76929a7e9b8e5a29d6e96cce9e.dir
-      size: 85292971
+      md5: c2feb2fc5ff409cd7e42c3aeaede82b5.dir
+      size: 112017983
       nfiles: 1
     - path: config/config.yaml
       hash: md5
@@ -72,21 +72,21 @@ stages:
     params:
       params.yaml:
         AUGMENTATION: true
-        BATCH_SIZE: 64
-        EPOCHS: 5
+        BATCH_SIZE: 96
+        EPOCHS: 50
         IMAGE_SIZE:
         - 64
         - 64
         - 3
-        LEARNING_RATE: 0.001
-        MODEL_NAME: resnet34
+        LEARNING_RATE: 0.0001
+        MODEL_NAME: emonext
         NUM_CLASSES: 7
         OPTIMIZER: adamw
     outs:
     - path: artifacts/training/model.pth
       hash: md5
-      md5: 1910986794d408867db6fceee6c1594e
-      size: 85278411
+      md5: 9d656ce67a5d0efc410d879173361add
+      size: 112005883
   evaluation:
     cmd: python 
       src\FacialExpressionRecognition\pipeline\stage_04_model_evalution_with_mlflow.py
@@ -98,8 +98,8 @@ stages:
       nfiles: 1
     - path: artifacts/training/model.pth
       hash: md5
-      md5: 1910986794d408867db6fceee6c1594e
-      size: 85278411
+      md5: 9d656ce67a5d0efc410d879173361add
+      size: 112005883
     - path: config/config.yaml
       hash: md5
       md5: 78c6c48f1b3891fb2048aa7784734ecf
@@ -111,7 +111,7 @@ stages:
       size: 881
     params:
       params.yaml:
-        BATCH_SIZE: 64
+        BATCH_SIZE: 96
         IMAGE_SIZE:
         - 64
         - 64
@@ -119,5 +119,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 699abfc3a9235653b84951512aa3346f
-      size: 241
+      md5: ac9b102885a732ee419b78e55b49b3cb
+      size: 239
