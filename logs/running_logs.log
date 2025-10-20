@@ -3904,3 +3904,54 @@ ValueError: not enough values to unpack (expected 5, got 4)
 [2025-10-15 15:40:40,627: INFO: _internal]: 127.0.0.1 - - [15/Oct/2025 15:40:40] "POST /predict HTTP/1.1" 200 -
 [2025-10-15 15:40:52,300: INFO: _internal]: 127.0.0.1 - - [15/Oct/2025 15:40:52] "POST /predict HTTP/1.1" 200 -
 [2025-10-15 15:40:57,132: INFO: _internal]: 127.0.0.1 - - [15/Oct/2025 15:40:57] "POST /predict HTTP/1.1" 200 -
+[2025-10-20 11:26:19,758: INFO: main]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-10-20 11:26:19,772: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-20 11:26:19,781: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-20 11:26:19,781: INFO: common]: Directory created at: artifacts
+[2025-10-20 11:26:19,782: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-10-20 11:26:24,782: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-10-20 11:26:24,782: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-10-20 11:26:24,782: INFO: main]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-10-20 11:26:24,782: INFO: main]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-10-20 11:26:24,786: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-20 11:26:24,786: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-20 11:26:24,789: INFO: common]: Directory created at: artifacts
+[2025-10-20 11:26:24,789: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-10-20 11:26:25,603: INFO: main]: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[2025-10-20 11:26:25,603: INFO: main]: >>>>>> stage Training stage started <<<<<<
+[2025-10-20 11:26:25,605: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-20 11:26:25,607: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-20 11:26:25,607: INFO: common]: Directory created at: artifacts
+[2025-10-20 11:26:25,609: INFO: common]: Directory created at: artifacts\training
+[2025-10-20 11:27:00,611: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.243:8080
+[2025-10-20 11:27:00,611: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-20 11:29:45,189: INFO: main]: >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-10-20 11:29:45,189: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-20 11:29:45,189: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-20 11:29:45,189: INFO: common]: Directory created at: artifacts
+[2025-10-20 11:29:45,189: INFO: common]: Directory created at: artifacts/data_ingestion
+[2025-10-20 11:29:46,837: INFO: data_ingestion]: Downloaded file from :[https://drive.google.com/file/d/10cuSJ1L8N5CT5cmLvieyCf5TFtEz1lLy/view?usp=sharing] and saved at :[artifacts/data_ingestion/data.zip]
+[2025-10-20 11:29:46,837: INFO: data_ingestion]: Zip file already extracted in dir :[artifacts/data_ingestion]
+[2025-10-20 11:29:46,837: INFO: main]: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-10-20 11:29:46,837: INFO: main]: >>>>>> stage Prepare Base Model stage started <<<<<<
+[2025-10-20 11:29:46,839: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-20 11:29:46,841: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-20 11:29:46,841: INFO: common]: Directory created at: artifacts
+[2025-10-20 11:29:46,841: INFO: common]: Directory created at: artifacts/prepare_base_model
+[2025-10-20 11:29:47,589: INFO: main]: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[2025-10-20 11:29:47,589: INFO: main]: >>>>>> stage Training stage started <<<<<<
+[2025-10-20 11:29:47,602: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-20 11:29:47,602: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-20 11:29:47,602: INFO: common]: Directory created at: artifacts
+[2025-10-20 11:29:47,602: INFO: common]: Directory created at: artifacts\training

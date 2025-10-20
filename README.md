@@ -24,6 +24,7 @@ conda activate FER
 
 ### STEP 02- Install requirements and run setup
 ```bash
+cd FaceEmotionRecognitionSystem
 pip install -r requirements.txt
 pip install -e .
 ```
